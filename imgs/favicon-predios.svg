@@ -1,74 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
     <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#ff2a2a"/>
-      <stop offset="100%" stop-color="#d90000"/>
+      <stop offset="0%" stop-color="#ff2525"/>
+      <stop offset="100%" stop-color="#e00000"/>
     </linearGradient>
-
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="10" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
-  <!-- Fundo -->
-  <rect width="512" height="512" rx="96" fill="#050505"/>
+  <!-- quadrado bem arredondado -->
+  <rect x="12" y="12" width="488" height="488" rx="125" fill="#050505"/>
 
-  <!-- Brilho sutil -->
-  <circle cx="256" cy="270" r="170" fill="#ffffff" opacity="0.03"/>
+  <!-- base -->
+  <rect x="76" y="388" width="360" height="12" rx="6" fill="#fff"/>
 
-  <!-- Base -->
-  <rect x="72" y="402" width="368" height="14" rx="7" fill="#1b1b1b"/>
+  <!-- prédio esquerdo -->
+  <path d="M105 388V306L153 278V388Z" fill="#fff"/>
+  <rect x="120" y="318" width="17" height="25" rx="2" fill="#050505"/>
+  <rect x="120" y="354" width="17" height="24" rx="2" fill="#050505"/>
 
-  <!-- Prédio esquerdo menor -->
-  <path d="M104 402V322L148 294V402Z"
-        fill="#ffffff"
-        stroke="#111111"
-        stroke-width="8"
-        stroke-linejoin="round"/>
+  <!-- prédio médio -->
+  <path d="M175 388V215L238 177V388Z" fill="#fff"/>
+  <rect x="192" y="240" width="18" height="25" rx="2" fill="#050505"/>
+  <rect x="218" y="224" width="18" height="25" rx="2" fill="#050505"/>
+  <rect x="192" y="278" width="18" height="25" rx="2" fill="#050505"/>
+  <rect x="218" y="262" width="18" height="25" rx="2" fill="#050505"/>
+  <rect x="192" y="316" width="18" height="25" rx="2" fill="#050505"/>
+  <rect x="218" y="300" width="18" height="25" rx="2" fill="#050505"/>
 
-  <rect x="118" y="334" width="16" height="26" fill="#0a0a0a"/>
-  <rect x="118" y="370" width="16" height="22" fill="#0a0a0a"/>
+  <!-- torre central -->
+  <path d="M258 388V101L329 151V388Z" fill="#fff"/>
+  <path d="M277 388V136L302 154V388Z" fill="url(#red)"/>
+  <path d="M311 388V160L320 167V388Z" fill="url(#red)"/>
 
-  <!-- Prédio esquerdo médio -->
-  <path d="M174 402V222L236 184V402Z"
-        fill="#ffffff"
-        stroke="#111111"
-        stroke-width="8"
-        stroke-linejoin="round"/>
-
-  <rect x="190" y="246" width="20" height="28" fill="#0a0a0a"/>
-  <rect x="218" y="228" width="20" height="28" fill="#0a0a0a"/>
-  <rect x="190" y="286" width="20" height="28" fill="#0a0a0a"/>
-  <rect x="218" y="268" width="20" height="28" fill="#0a0a0a"/>
-  <rect x="190" y="326" width="20" height="28" fill="#0a0a0a"/>
-  <rect x="218" y="308" width="20" height="28" fill="#0a0a0a"/>
-
-  <!-- Torre central -->
-  <path d="M262 402V100L326 146V402Z"
-        fill="#ffffff"
-        stroke="#111111"
-        stroke-width="8"
-        stroke-linejoin="round"
-        filter="url(#glow)"/>
-
-  <path d="M280 390V134L304 152V390Z"
-        fill="url(#red)"/>
-
-  <path d="M308 390V156L320 166V390Z"
-        fill="url(#red)"/>
-
-  <!-- Prédio direito -->
-  <path d="M330 402V286L400 268V402Z"
-        fill="#ffffff"
-        stroke="#111111"
-        stroke-width="8"
-        stroke-linejoin="round"/>
-
-  <rect x="350" y="308" width="34" height="16" fill="#0a0a0a"/>
-  <rect x="350" y="338" width="34" height="16" fill="#0a0a0a"/>
-  <rect x="350" y="368" width="34" height="16" fill="#0a0a0a"/>
+  <!-- prédio direito -->
+  <path d="M334 388V286L407 267V388Z" fill="#fff"/>
+  <rect x="353" y="307" width="37" height="15" rx="2" fill="#050505"/>
+  <rect x="353" y="337" width="37" height="15" rx="2" fill="#050505"/>
+  <rect x="353" y="367" width="37" height="15" rx="2" fill="#050505"/>
 </svg>
